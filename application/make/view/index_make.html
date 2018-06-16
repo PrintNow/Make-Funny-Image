@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="renderer" content="webkit">
+    <meta name="theme-color" content="#3f51b5" />
+    <title>{$title}</title>
+    <link href="https://cdn.bootcss.com/mdui/0.4.1/css/mdui.min.css" rel="stylesheet">
+</head>
+<body class="mdui-drawer-body-left mdui-appbar-with-toolbar mdui-theme-primary-indigo mdui-theme-accent-pink mdui-bottom-nav-fixed">
+
+    <div id="container">
+
+        <header class="mdui-appbar mdui-appbar-fixed">
+            <div class="mdui-toolbar mdui-color-theme">
+                <a href="/" class="mdui-btn mdui-btn-icon mdui-ripple mdui-ripple-white"><i class="mdui-icon material-icons">arrow_back</i></a>
+                <!-- <span class="mdui-btn mdui-btn-icon mdui-ripple mdui-ripple-white" mdui-drawer="{target: '#main-drawer', swipe: true}"></span> -->
+                <a href="/" class="mdui-typo-headline mdui-hidden-xs">制作有趣的图像</a>
+                <a href="/" class="mdui-typo-title">制作“{$list.cn_name}”GIF/动图</a>
+                <div class="mdui-toolbar-spacer"></div>
+            </div>
+        </header>
+
+        <div class="mdui-container mdui-panel" style="padding-top: 8px;">
+            <div class="mdui-row">
+                <div class="mdui-col-md-4">
+                    <div class="mdui-card">
+                        <div class="mdui-card-media">
+                            <img src="{$list.preview_image}">
+                        </div>
+                    </div>
+                </div>
+                <div class="mdui-col-md-8">
+
+                    {php}foreach ($list['subtitle'] as $key=>$val){
+                    $keys = $key+1;
+                    echo'    <div class="mdui-textfield">';
+                    echo'        <label class="mdui-textfield-label">第 '.$keys.' 句</label>';
+                    echo'        <input class="mdui-textfield-input" type="text" name="'.$list['en_name'].'_value" placeholder="'.$list['subtitle'][$key].'"/>';
+                    echo'    </div>';
+                    }{/php}
+
+
+                    {for start="1" end="{$list.subtitle_num+1}" step="1" name="i"}
+
+                    <div class="mdui-textfield">
+                        <label class="mdui-textfield-label">第 {$i} 句</label>
+                        <input class="mdui-textfield-input" type="text" name="{$list.en_name}_value" placeholder="{$list.subtitle.$i}"/>
+                    </div>
+                    {/for}
+                </div>
+            </div>
+
+            <div class="mdui-col">
+                <hr class="mdui-invisible">
+                <button id="create" en_name="{$list.en_name}" class="mdui-btn mdui-btn-block mdui-color-theme-accent mdui-ripple">生成</button>
+            </div>
+        </div>
+
+
+    </div>
+    <script src="https://cdn.bootcss.com/mdui/0.4.1/js/mdui.min.js"></script>
+    <script src="/static/js/script.js"></script>
+    </body>
+</html>
