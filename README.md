@@ -50,7 +50,7 @@ location / {
     }
  }
  ```
- 
+
 ## 4. 安装中文字体
 > `Windows` 用户，如果能显示中文字，就不需要
 - ### 4-1. 下载字体
@@ -62,9 +62,9 @@ location / {
 > 我不保证以下方法适用于所有 Linux，如果无法 `安装字体`，请 [Google](https://www.google.com)、[Baidu](https://www.baidu.com)、[Bing](https://www.bing.com) 等其他搜索引擎或使用其他途径寻找 `Linux 安装字体` 的办法
 
  - `Ubuntu` [安装字体](http://www.it266.com/blog/2017/243.html)
- - `CentOS`  [安装字体](https://blog.c
- 
- 
+ - `CentOS` [安装字体](https://blog.csdn.net/wlwlwlwl015/article/details/51482065)
+
+
 ## 5. DeBUG
 注意：我在 `WIndows 10` 下运行失败，原因，`exec` 函数无法调用外部命令，经查可能是权限问题或其他问题，所以我建议你在 `Linux`、`Windows Server` 下测试，`MAC` 没用过。
 > 如果你解决了 “`exec` 函数无法调用外部命令” 问题，欢迎分享！
