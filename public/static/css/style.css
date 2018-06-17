@@ -1,0 +1,311 @@
+.fixed-picture {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 290px;
+    height: 150px;
+
+}
+.fixed-picture img{
+    display: inline;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.side-background {
+    background: #f1f1f1;
+}
+
+.padding-top-8 {
+    padding-top: 8px;
+}
+
+
+#page-index .mdui-container {
+    font-family: "Roboto Mono", Roboto, Noto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    width: 94%;
+    max-width: 1280px;
+}
+@media (min-width: 600px) {
+    #page-index .mdui-container,
+    #page-index .mdui-container-fluid {
+        padding-right: 16px;
+        padding-left: 16px;
+    }
+    #page-index .mdui-row,
+    #page-index [class*=mdui-row-] {
+        margin-right: -16px;
+        margin-left: -16px;
+    }
+    #page-index .mdui-col,
+    #page-index [class*=mdui-col-xs-],
+    #page-index [class*=mdui-col-sm-],
+    #page-index [class*=mdui-col-md-],
+    #page-index [class*=mdui-col-lg-],
+    #page-index [class*=mdui-col-xl-] {
+        padding-right: 16px;
+        padding-left: 16px;
+    }
+}
+@media (min-width: 1024px) {
+    #page-index .mdui-container,
+    #page-index .mdui-container-fluid {
+        padding-right: 24px;
+        padding-left: 24px;
+    }
+    #page-index .mdui-row,
+    #page-index [class*=mdui-row-] {
+        margin-right: -24px;
+        margin-left: -24px;
+    }
+    #page-index .mdui-col,
+    #page-index [class*=mdui-col-xs-],
+    #page-index [class*=mdui-col-sm-],
+    #page-index [class*=mdui-col-md-],
+    #page-index [class*=mdui-col-lg-],
+    #page-index [class*=mdui-col-xl-] {
+        padding-right: 24px;
+        padding-left: 24px;
+    }
+}
+
+
+#page-index .main-section {
+    background: url(data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJFYmVuZV8yIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4IgoJIHdpZHRoPSIxNjIycHgiIGhlaWdodD0iNjI2cHgiIHZpZXdCb3g9IjAgMCAxNjIyIDYyNiIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMTYyMiA2MjYiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8cG9seWdvbiBvcGFjaXR5PSIwLjIiIGZpbGw9IiNGRkZGRkYiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXciIHBvaW50cz0iMTMwOCwzMC4zMSAxMzM4LDM5Ljk4IDEzMTcuMzMsNjEuMzEgIi8+CjxjaXJjbGUgb3BhY2l0eT0iMC4yIiBmaWxsPSIjRkZGRkZGIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IiBjeD0iMTQwMCIgY3k9IjI0MCIgcj0iMjQiLz4KPGNpcmNsZSBvcGFjaXR5PSIwLjIiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0ZGRkZGRiIgc3Ryb2tlLXdpZHRoPSIzIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXciIGN4PSIxNDgwIiBjeT0iMTIwIiByPSI2LjkyIi8+Cjxwb2x5Z29uIG9wYWNpdHk9IjAuMiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRkZGRkZGIiBzdHJva2Utd2lkdGg9IjMiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyIgcG9pbnRzPSIKCTE4MS4wNCwxMTYuOTggMjA5LjQ2LDExMS41IDE5OS41MSwxMzguMjkgIi8+Cjxwb2x5Z29uIG9wYWNpdHk9IjAuMiIgZmlsbD0iI0ZGRkZGRiIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyIgcG9pbnRzPSI0MTIuMTgsMzY5Ljc3IDQyOS42OCwzNzkuMzMgNDEyLjE4LDM4OS44NiAiLz4KPGNpcmNsZSBvcGFjaXR5PSIwLjIiIGZpbGw9IiNGRkZGRkYiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXciIGN4PSIyODUuNTgiIGN5PSIxOC40OCIgcj0iOS44MyIvPgo8cG9seWdvbiBvcGFjaXR5PSIwLjIiIGZpbGw9IiNGRkZGRkYiIHBvaW50cz0iMTE2OS4xNywzNTcuMTcgMTIxNi41LDI5MS44MyAxMjgxLDMzOCAxMjM0LjgzLDQwMi44MyAiLz4KPHBvbHlnb24gb3BhY2l0eT0iMC4yIiBmaWxsPSIjRkZGRkZGIiBwb2ludHM9IjE2Mi43NSwyNTAuMjUgMjE2LjI1LDI2MS43NSAyMDUuMTIsMzE1LjQ2IDE1MC43NSwzMDQuNSAiLz4KPC9zdmc+Cg==) 50% 17vh no-repeat;
+}
+#page-index .mdui-theme-layout-dark .main-section {
+    background-color: #444444 !important;
+}
+#page-index .main-container {
+    text-align: center;
+    padding-bottom: 0;
+}
+#page-index .main-container h2 {
+    padding-top: 48px;
+    margin: 0 0 24px 0;
+    font-size: 28px;
+    font-weight: 400;
+}
+#page-index .main-container h4 {
+    font-weight: 400;
+    opacity: 0.78;
+    font-size: 16px;
+}
+#page-index .main-btn-wrapper {
+    margin: 60px 0 20px 0;
+}
+#page-index .main-btn {
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    color: rgba(255, 255, 255, 0.6);
+    border-radius: 500px;
+    height: 36px;
+    line-height: 36px;
+    width: 112px;
+    font-size: 14px;
+}
+#page-index .main-btn:hover {
+    border: 1px solid #ffffff;
+    color: rgba(255, 255, 255, 0.9);
+}
+#page-index .main-meta-wrapper {
+    line-height: 40px;
+    height: 40px;
+}
+#page-index .main-meta-item {
+    position: relative;
+    margin: 0 3px;
+    line-height: 36px;
+    display: inline-block;
+}
+#page-index .main-meta-item i {
+    float: left;
+    margin-right: 4px;
+}
+#page-index .main-meta-btn {
+    color: inherit;
+    text-decoration: none;
+}
+#page-index .main-meta-btn:hover {
+    text-decoration: underline;
+}
+@media (min-width: 600px) {
+    #page-index .main-container h2 {
+        padding-top: 72px;
+        margin-bottom: 36px;
+        font-size: 32px;
+    }
+    #page-index .main-btn-wrapper {
+        margin: 76px 0 26px 0;
+    }
+    #page-index .main-btn {
+        height: 42px;
+        line-height: 42px;
+        width: 128px;
+        font-size: 16px;
+    }
+    #page-index .main-meta-wrapper {
+        line-height: 50px;
+        height: 50px;
+    }
+    #page-index .main-meta-item {
+        margin: 0 5px;
+    }
+}
+@media (min-width: 1024px) {
+    #page-index .main-container h2 {
+        padding-top: 96px;
+        margin-bottom: 48px;
+        font-size: 36px;
+    }
+    #page-index .main-btn-wrapper {
+        margin: 92px 0 38px 0;
+    }
+    #page-index .main-btn {
+        height: 48px;
+        line-height: 48px;
+        width: 144px;
+        font-size: 18px;
+    }
+    #page-index .main-meta-wrapper {
+        line-height: 64px;
+        height: 64px;
+    }
+    #page-index .main-meta-item {
+        margin: 0 8px;
+    }
+}
+
+
+#page-index .adv-section {
+    margin: 0px 0;
+}
+#page-index .adv-item {
+    padding: 16px 0;
+    height: 88px;
+}
+#page-index .adv-item-icon {
+    float: left;
+}
+#page-index .adv-item-icon:before {
+    font-size: 24px;
+}
+#page-index .adv-item-detail {
+    padding-left: 38px;
+}
+#page-index .adv-item-detail-title {
+    height: 24px;
+    line-height: 24px;
+    font-weight: bold;
+}
+#page-index .adv-item-detail-desc {
+    padding-top: 12px;
+    font-size: 14px;
+    line-height: 26px;
+}
+@media (min-width: 600px) {
+    /*#page-index .adv-section {*/
+        /*margin: 52px 0;*/
+    /*}*/
+    #page-index .adv-item {
+        padding: 24px 0;
+        height: 94px;
+    }
+    #page-index .adv-item-icon:before {
+        font-size: 28px;
+    }
+    #page-index .adv-item-detail {
+        padding-left: 42px;
+    }
+    #page-index .adv-item-detail-title {
+        height: 28px;
+        line-height: 28px;
+    }
+    #page-index .adv-item-detail-desc {
+        padding-top: 14px;
+    }
+}
+@media (min-width: 1024px) {
+    /*#page-index .adv-section {*/
+        /*margin: 60px 0;*/
+    /*}*/
+    #page-index .adv-item {
+        padding: 32px 0;
+        height: 100px;
+    }
+    #page-index .adv-item-icon:before {
+        font-size: 32px;
+    }
+    #page-index .adv-item-detail {
+        padding-left: 46px;
+    }
+    #page-index .adv-item-detail-title {
+        height: 32px;
+        line-height: 32px;
+    }
+    #page-index .adv-item-detail-desc {
+        padding-top: 16px;
+    }
+}
+
+
+#page-index footer {
+    padding: 16px 0;
+    background-color: #424242;
+    color: #9e9e9e;
+}
+#page-index footer a {
+    color: inherit;
+    text-decoration: none;
+}
+#page-index footer a:hover {
+    color: #bbbbbb;
+}
+#page-index .footer-nav h4 {
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: .04em;
+    margin-top: 0;
+    margin-bottom: 18px;
+}
+#page-index .footer-nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+#page-index .footer-nav ul li {
+    margin: 0 0 10px 0;
+}
+#page-index .footer-donate-btn {
+    margin-top: 24px;
+}
+#page-index .footer-divider {
+    margin: 16px 0;
+}
+#page-index .footer-copyright {
+    text-align: center;
+    font-size: 12px;
+}
+#page-index .mdui-theme-layout-dark footer {
+    background-color: #333333;
+}
+@media (min-width: 600px) {
+    #page-index footer {
+        padding: 24px 0;
+    }
+    #page-index .footer-divider {
+        margin: 24px 0;
+    }
+    #page-index .footer-copyright {
+        font-size: 14px;
+    }
+}
+@media (min-width: 1024px) {
+    #page-index footer {
+        padding: 32px 0;
+    }
+    #page-index .footer-divider {
+        margin: 32px 0;
+    }
+}
